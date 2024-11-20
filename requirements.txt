@@ -1,7 +1,6 @@
 uvicorn
 fastapi[standard]
 mysql-connector-python
-mysql.connector
 pandas
 # typing
 # pydantic

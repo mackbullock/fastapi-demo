@@ -8,10 +8,7 @@ import pandas as pd
 import json
 import os
 
-
 app = FastAPI()
-
-
 from fastapi.middleware.cors import CORSMiddleware
 app.add_middleware(
     CORSMiddleware,
@@ -27,7 +24,6 @@ DBPASS = os.getenv('DBPASS')
 DB= "ejv4pz"
 db = mysql.connector.connect(user=DBUSER, host=DBHOST, password=DBPASS, database=DB)
 cur=db.cursor()
-
 
 @app.get("/")  # zone apex
 def zone_apex():
